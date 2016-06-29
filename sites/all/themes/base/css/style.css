@@ -1,0 +1,782 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'maven_pro_light100';
+  src: url("../fonts/mavenprolight-100-webfont.eot");
+  src: url("../fonts/mavenprolight-100-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-100-webfont.woff") format("woff"), url("../fonts/mavenprolight-100-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-100-webfont.svg#maven_pro_light100") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'maven_pro_light200';
+  src: url("../fonts/mavenprolight-200-webfont.eot");
+  src: url("../fonts/mavenprolight-200-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-200-webfont.woff") format("woff"), url("../fonts/mavenprolight-200-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-200-webfont.svg#maven_pro_light200") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'maven_pro_light300';
+  src: url("../fonts/mavenprolight-300-webfont.eot");
+  src: url("../fonts/mavenprolight-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-300-webfont.woff") format("woff"), url("../fonts/mavenprolight-300-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-300-webfont.svg#maven_pro_light300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GaramondPremierProLightDisplay';
+  src: url("../fonts/garamondpremrpro-ltdisp.eot");
+  src: url("../fonts/garamondpremrpro-ltdisp.eot") format("embedded-opentype"), url("../fonts/garamondpremrpro-ltdisp.woff") format("woff"), url("../fonts/garamondpremrpro-ltdisp.ttf") format("truetype"), url("../fonts/garamondpremrpro-ltdisp.svg#GaramondPremierProLightDisplay") format("svg"); }
+
+@font-face {
+  font-family: 'GaramondPremierProLightItalicDisplay';
+  src: url("../fonts/garamondpremrpro-ltitdisp.eot");
+  src: url("../fonts/garamondpremrpro-ltitdisp.eot") format("embedded-opentype"), url("../fonts/garamondpremrpro-ltitdisp.woff") format("woff"), url("../fonts/garamondpremrpro-ltitdisp.ttf") format("truetype"), url("../fonts/garamondpremrpro-ltitdisp.svg#GaramondPremierProLightItalicDisplay") format("svg"); }
+
+@font-face {
+  font-family: 'socialize';
+  src: url("../fonts/socialize.eot?-nxow1h");
+  src: url("../fonts/socialize.eot?#iefix-nxow1h") format("embedded-opentype"), url("../fonts/socialize.woff?-nxow1h") format("woff"), url("../fonts/socialize.ttf?-nxow1h") format("truetype"), url("../fonts/socialize.svg?-nxow1h#socialize") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, ../sass/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'socialize';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 26, ../sass/_icons.scss */
+.icon-file:before {
+  content: "\e600"; }
+
+/* line 29, ../sass/_icons.scss */
+.icon-pen:before {
+  content: "\e601"; }
+
+/* line 32, ../sass/_icons.scss */
+.icon-pen2:before {
+  content: "\e602"; }
+
+/* line 35, ../sass/_icons.scss */
+.icon-flickr:before {
+  content: "\72"; }
+
+/* line 38, ../sass/_icons.scss */
+.icon-flickr2:before {
+  content: "\52"; }
+
+/* line 41, ../sass/_icons.scss */
+.icon-vimeo:before {
+  content: "\76"; }
+
+/* line 44, ../sass/_icons.scss */
+.icon-vimeo2:before {
+  content: "\56"; }
+
+/* line 47, ../sass/_icons.scss */
+.icon-twitter:before {
+  content: "\74"; }
+
+/* line 50, ../sass/_icons.scss */
+.icon-twitter2:before {
+  content: "\54"; }
+
+/* line 53, ../sass/_icons.scss */
+.icon-facebook:before {
+  content: "\66"; }
+
+/* line 56, ../sass/_icons.scss */
+.icon-facebook2:before {
+  content: "\46"; }
+
+/* line 59, ../sass/_icons.scss */
+.icon-googleplus:before {
+  content: "\67"; }
+
+/* line 62, ../sass/_icons.scss */
+.icon-googleplus2:before {
+  content: "\47"; }
+
+/* line 65, ../sass/_icons.scss */
+.icon-pinterest:before {
+  content: "\70"; }
+
+/* line 68, ../sass/_icons.scss */
+.icon-pinterest2:before {
+  content: "\50"; }
+
+/* line 71, ../sass/_icons.scss */
+.icon-tumblr:before {
+  content: "\e603"; }
+
+/* line 74, ../sass/_icons.scss */
+.icon-tumblr2:before {
+  content: "\e604"; }
+
+/* line 77, ../sass/_icons.scss */
+.icon-linkedin:before {
+  content: "\e605"; }
+
+/* line 80, ../sass/_icons.scss */
+.icon-linkedin2:before {
+  content: "\e606"; }
+
+/* line 83, ../sass/_icons.scss */
+.icon-dribbble:before {
+  content: "\e607"; }
+
+/* line 86, ../sass/_icons.scss */
+.icon-dribbble2:before {
+  content: "\e608"; }
+
+/* line 89, ../sass/_icons.scss */
+.icon-stumbleupon:before {
+  content: "\e609"; }
+
+/* line 92, ../sass/_icons.scss */
+.icon-stumbleupon2:before {
+  content: "\e60a"; }
+
+/* line 95, ../sass/_icons.scss */
+.icon-instagram:before {
+  content: "\69"; }
+
+/* line 98, ../sass/_icons.scss */
+.icon-behance:before {
+  content: "\e60b"; }
+
+/* line 101, ../sass/_icons.scss */
+.icon-youtube:before {
+  content: "\79"; }
+
+/* line 104, ../sass/_icons.scss */
+.icon-yelp:before {
+  content: "\e60c"; }
+
+/* line 110, ../sass/_icons.scss */
+.block-btns a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline; }
+/* line 113, ../sass/_icons.scss */
+.block-btns a:hover {
+  color: #fff !important; }
+/* line 118, ../sass/_icons.scss */
+.block-btns .icon-vimeo:hover {
+  background-color: #aad450; }
+/* line 121, ../sass/_icons.scss */
+.block-btns .icon-twitter:hover {
+  background-color: #00aced; }
+/* line 124, ../sass/_icons.scss */
+.block-btns .icon-facebook:hover {
+  background-color: #3b5998; }
+/* line 127, ../sass/_icons.scss */
+.block-btns .icon-googleplus:hover {
+  background-color: #dd4b39; }
+/* line 130, ../sass/_icons.scss */
+.block-btns .icon-pinterest:hover {
+  background-color: #cb2027; }
+/* line 133, ../sass/_icons.scss */
+.block-btns .icon-instagram:hover {
+  background-color: #517fa4; }
+/* line 136, ../sass/_icons.scss */
+.block-btns .icon-linkedin:hover {
+  background-color: #517fa4; }
+
+/* VARS 
+-------------------------------------------------------------- */
+/*  COLORS  */
+/*  TYPOGROPHY */
+/*  TRANSITIONS  */
+/* MIX-INS 
+-------------------------------------------------------------- */
+/* PLACEHOLDERS & EXTENDS
+-------------------------------------------------------------- */
+/* BASIC STYLES
+-------------------------------------------------------------- */
+/* line 65, ../sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 69, ../sass/_base.scss */
+body {
+  font: 16px/1.5 "maven_pro_light300", serif;
+  background-color: white;
+  color: black; }
+
+/* line 75, ../sass/_base.scss */
+a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #cccccc;
+  text-decoration: none; }
+/* line 80, ../sass/_base.scss */
+a:hover {
+  color: black; }
+
+/* line 91, ../sass/_base.scss */
+ul, ul.menu, ul.menu li {
+  list-style: none;
+  text-align: inherit;
+  margin: 0;
+  padding: 0; }
+
+/* line 99, ../sass/_base.scss */
+li a.active, li.opened span.nolink {
+  color: black; }
+
+/* Layout
+-------------------------------------------------------------- */
+/* line 9, ../sass/style.scss */
+#header-container {
+  padding: 120px 0 200px; }
+@media (max-width: 700px) {
+  /* line 9, ../sass/style.scss */
+  #header-container {
+    padding: 40px 0 100px; } }
+
+/* line 17, ../sass/style.scss */
+#header {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "maven_pro_light200", sans-serif;
+  color: white; }
+
+/* line 26, ../sass/style.scss */
+#logo {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 3.5em;
+  padding: 0 40px; }
+/* line 32, ../sass/style.scss */
+#logo a {
+  color: white; }
+/* line 35, ../sass/style.scss */
+#logo a:hover {
+  color: #cccccc; }
+@media (max-width: 700px) {
+  /* line 26, ../sass/style.scss */
+  #logo {
+    font-size: 1.5em; } }
+
+/* line 45, ../sass/style.scss */
+#slogan {
+  background-color: #000;
+  display: block;
+  font-size: 1.5em; }
+@media (max-width: 700px) {
+  /* line 45, ../sass/style.scss */
+  #slogan {
+    font-size: 1em; } }
+
+/* Base
+-------------------------------------------------------------- */
+/* line 71, ../sass/style.scss */
+body {
+  background: black url("../images/main-bg.jpg") fixed; }
+
+/* line 76, ../sass/style.scss */
+p {
+  text-align: justify; }
+@media (max-width: 700px) {
+  /* line 76, ../sass/style.scss */
+  p {
+    text-align: left; } }
+
+/* line 85, ../sass/style.scss */
+h1.title, h2.pane-title {
+  text-align: center;
+  font-size: 4em;
+  font-family: "maven_pro_light200", sans-serif;
+  padding-bottom: 40px;
+  background-color: white; }
+@media (max-width: 700px) {
+  /* line 85, ../sass/style.scss */
+  h1.title, h2.pane-title {
+    font-size: 2.5em; } }
+
+/* line 98, ../sass/style.scss */
+#about .full, #services .full {
+  position: relative;
+  background-color: white;
+  padding: 40px 0; }
+
+/* line 104, ../sass/style.scss */
+.text-center {
+  max-width: 500px;
+  margin: 0 auto; }
+
+/* line 109, ../sass/style.scss */
+.text-big {
+  font-size: 1.5em;
+  text-align: center; }
+
+/* line 114, ../sass/style.scss */
+p + p {
+  margin-top: 40px; }
+
+/* line 118, ../sass/style.scss */
+.divider {
+  position: relative;
+  margin: 80px auto 0;
+  background-color: #cccccc;
+  height: 3px;
+  width: 100px;
+  clear: both; }
+
+/* line 127, ../sass/style.scss */
+.text-col {
+  *zoom: 1;
+  max-width: 1000px;
+  margin: 0 auto; }
+/* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.text-col:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 132, ../sass/style.scss */
+.text-col h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px; }
+/* line 139, ../sass/style.scss */
+.text-col .left, .text-col .right {
+  width: 50%;
+  float: left; }
+/* line 144, ../sass/style.scss */
+.text-col .left {
+  padding-right: 40px; }
+/* line 148, ../sass/style.scss */
+.text-col .right {
+  padding-left: 40px; }
+/* line 152, ../sass/style.scss */
+.text-col ul {
+  margin-left: 40px;
+  margin-top: 20px; }
+/* line 156, ../sass/style.scss */
+.text-col ul li {
+  list-style: disc; }
+@media (max-width: 1000px) {
+  /* line 163, ../sass/style.scss */
+  .text-col .left, .text-col .right {
+    width: 100%;
+    padding: 10px;
+    float: none;
+    max-width: 500px;
+    margin: 0 auto; } }
+
+/* line 173, ../sass/style.scss */
+.cta {
+  color: white;
+  text-align: center;
+  padding: 150px 0 200px; }
+/* line 178, ../sass/style.scss */
+.cta .inner {
+  max-width: 500px;
+  margin: 0 auto; }
+/* line 183, ../sass/style.scss */
+.cta h2 {
+  font-family: "maven_pro_light200", sans-serif;
+  font-size: 3.5em; }
+/* line 188, ../sass/style.scss */
+.cta .btn {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 1.5em;
+  margin-top: 20px; }
+/* line 193, ../sass/style.scss */
+.cta .btn a {
+  color: black;
+  padding: 20px 40px;
+  background-color: #fff; }
+/* line 198, ../sass/style.scss */
+.cta .btn a:hover {
+  background-color: #000;
+  color: #fff; }
+@media (max-width: 700px) {
+  /* line 173, ../sass/style.scss */
+  .cta {
+    padding: 60px 0 100px; }
+  /* line 208, ../sass/style.scss */
+  .cta h2 {
+    font-size: 1.5em; }
+  /* line 212, ../sass/style.scss */
+  .cta .btn {
+    font-size: 1em;
+    margin-top: 10px; }
+  /* line 216, ../sass/style.scss */
+  .cta .btn a {
+    padding: 10px 20px; } }
+
+/* line 226, ../sass/style.scss */
+.samples .pane-content {
+  *zoom: 1;
+  max-width: 1000px;
+  margin: 0 auto; }
+/* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.samples .pane-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 234, ../sass/style.scss */
+.teaser, .full.sample {
+  *zoom: 1;
+  width: 700px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  margin-bottom: 80px; }
+/* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.teaser:after, .full.sample:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 241, ../sass/style.scss */
+.teaser img, .full.sample img {
+  width: 100%;
+  height: auto;
+  border: #cccccc 20px solid; }
+/* line 248, ../sass/style.scss */
+.teaser .title, .full.sample .title {
+  font-size: 2.5em;
+  font-family: "maven_pro_light200", sans-serif;
+  padding: 20px;
+  line-height: 1.2;
+  padding-bottom: 20px; }
+/* line 255, ../sass/style.scss */
+.teaser .title a, .full.sample .title a {
+  color: black; }
+/* line 258, ../sass/style.scss */
+.teaser .title a:hover, .full.sample .title a:hover {
+  color: #cccccc; }
+/* line 264, ../sass/style.scss */
+.teaser .sub-title, .full.sample .sub-title {
+  font-size: 1.2em;
+  padding: 20px;
+  padding-top: 0px; }
+/* line 270, ../sass/style.scss */
+.teaser .type, .full.sample .type {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 5px 10px;
+  font-size: .8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #cccccc;
+  margin-left: -1%;
+  margin-top: 1.5%; }
+/* line 281, ../sass/style.scss */
+.teaser .pub, .full.sample .pub {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  width: 103%;
+  margin-left: -1.5%;
+  font-weight: normal;
+  font-size: 1.2em; }
+/* line 291, ../sass/style.scss */
+.teaser .label, .full.sample .label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: 1px; }
+/* line 298, ../sass/style.scss */
+.teaser .body, .full.sample .body {
+  padding: 20px;
+  text-align: justify; }
+/* line 302, ../sass/style.scss */
+.teaser .body h2, .full.sample .body h2 {
+  margin: 40px 0 10px;
+  font-size: 2em;
+  text-align: left; }
+/* line 308, ../sass/style.scss */
+.teaser .body h3, .full.sample .body h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+  text-align: left; }
+/* line 317, ../sass/style.scss */
+.teaser .more, .full.sample .more {
+  float: right; }
+@media (max-width: 700px) {
+  /* line 234, ../sass/style.scss */
+  .teaser, .full.sample {
+    width: 100%;
+    padding: 10px; }
+  /* line 325, ../sass/style.scss */
+  .teaser .title, .full.sample .title {
+    font-size: 1.8em; }
+  /* line 329, ../sass/style.scss */
+  .teaser .sub-title, .full.sample .sub-title {
+    font-size: 1em; }
+  /* line 333, ../sass/style.scss */
+  .teaser .body, .full.sample .body {
+    text-align: left; } }
+
+/* line 343, ../sass/style.scss */
+.view-header p {
+  text-align: center;
+  margin-bottom: 40px; }
+
+/* line 350, ../sass/style.scss */
+.more, .back {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-color: #4d4d4d; }
+/* line 354, ../sass/style.scss */
+.more a, .back a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+/* line 361, ../sass/style.scss */
+.more a:hover, .back a:hover {
+  background-color: #f1f1f1;
+  color: black; }
+
+/* line 371, ../sass/style.scss */
+#about .top {
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  height: 250px;
+  overflow: hidden;
+  z-index: 0; }
+/* line 380, ../sass/style.scss */
+#about .top .inner {
+  -webkit-transform: rotate(-1.5deg);
+  -moz-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+  background-color: white;
+  width: 110%;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  left: -5%; }
+/* line 391, ../sass/style.scss */
+#about .full {
+  z-index: 10; }
+@media (max-width: 700px) {
+  /* line 397, ../sass/style.scss */
+  #about .inner {
+    padding: 10px; } }
+
+/* line 403, ../sass/style.scss */
+#services {
+  position: relative; }
+/* line 405, ../sass/style.scss */
+#services .bot {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  height: 250px;
+  overflow: hidden;
+  z-index: 0; }
+/* line 414, ../sass/style.scss */
+#services .bot .inner {
+  -webkit-transform: rotate(-1.5deg);
+  -moz-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+  background-color: white;
+  width: 110%;
+  height: 100px;
+  position: absolute;
+  bottom: 40px;
+  left: -5%; }
+
+/* line 426, ../sass/style.scss */
+#cta {
+  position: relative; }
+/* line 429, ../sass/style.scss */
+#cta .bot {
+  width: 100%;
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  height: 250px;
+  overflow: hidden;
+  z-index: 0; }
+/* line 438, ../sass/style.scss */
+#cta .bot .inner {
+  -webkit-transform: rotate(-1.5deg);
+  -moz-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+  background-color: white;
+  width: 110%;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  left: -5%; }
+
+/* line 450, ../sass/style.scss */
+#samples {
+  padding-top: 50px;
+  background-color: white; }
+
+/* line 456, ../sass/style.scss */
+footer {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  width: 100%; }
+
+/* line 463, ../sass/style.scss */
+.footer-left {
+  /*float: left;*/
+  margin-right: 600px;
+  background-color: white;
+  height: 600px;
+  position: relative;
+  z-index: 100; }
+/* line 472, ../sass/style.scss */
+.footer-left .slogan {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 1.5em;
+  font-family: "maven_pro_light200", sans-serif; }
+
+/* line 481, ../sass/style.scss */
+.footer-right {
+  float: right;
+  width: 600px;
+  height: 600px;
+  font-size: 1.2em;
+  text-align: right;
+  position: relative;
+  margin-left: -600px;
+  color: white;
+  font-family: "maven_pro_light200", sans-serif;
+  z-index: 1;
+  overflow: hidden; }
+/* line 494, ../sass/style.scss */
+.footer-right #logo-big {
+  position: relative;
+  top: 130px;
+  right: -50px; }
+/* line 500, ../sass/style.scss */
+.footer-right .info {
+  position: absolute;
+  bottom: 40px;
+  right: 40px; }
+/* line 507, ../sass/style.scss */
+.footer-right .title {
+  font-size: 1.3em; }
+/* line 513, ../sass/style.scss */
+.footer-right .tri img {
+  position: absolute;
+  top: 0;
+  right: 0; }
+/* line 521, ../sass/style.scss */
+.footer-right a {
+  color: white; }
+/* line 524, ../sass/style.scss */
+.footer-right a:hover {
+  color: #cccccc; }
+@media (max-width: 700px) {
+  /* line 481, ../sass/style.scss */
+  .footer-right {
+    width: 100%; }
+  /* line 532, ../sass/style.scss */
+  .footer-right .info {
+    bottom: 20px;
+    right: 20px;
+    padding-left: 20px; } }
+
+/* line 544, ../sass/style.scss */
+.page-user #header-container, .node-type-page #header-container, .node-type-sample #header-container {
+  padding-bottom: 100px; }
+/* line 548, ../sass/style.scss */
+.page-user #main-container, .node-type-page #main-container, .node-type-sample #main-container {
+  background-color: white; }
+/* line 550, ../sass/style.scss */
+.page-user #main-container .main, .node-type-page #main-container .main, .node-type-sample #main-container .main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center; }
+/* line 557, ../sass/style.scss */
+.page-user #main-container .full, .node-type-page #main-container .full, .node-type-sample #main-container .full {
+  text-align: left; }

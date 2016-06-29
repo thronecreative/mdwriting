@@ -1,0 +1,117 @@
+/* VARS 
+-------------------------------------------------------------- */
+$main_width:      1200px;
+$col_w:           500px;
+
+$bp_lg:           1400px;
+$bp_med:          1000px;
+$bp_sm:           700px;
+
+/*  COLORS  */
+$color_main:         #000;                 
+$color_accent:       #ccc;              
+$color_error:        #b54747;
+$color_warning:      #f0da72;
+
+$page_bg:            #fff;
+$page_med:           darken($page_bg, 5%);
+$page_lt:            #405858;
+$page_dark:          #2b3232;
+
+/*  TYPOGROPHY */
+$font_main:					'maven_pro_light300', serif;
+$font_header:				'maven_pro_light200', sans-serif;
+$font_fancy:        'maven_pro_light100', serif;
+
+$font_weight_lt:         100;
+$font_weight_reg:        400;
+$font_weight_bold:       700;
+
+/*  TRANSITIONS  */
+$default-transition-property : all;
+$default-transition-duration : .3s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
+$default-box-shadow-color: #111;
+$default-box-shadow-h-offset: 0px;
+$default-box-shadow-v-offset: 0px;
+$default-box-shadow-blur: 3px;
+
+/* MIX-INS 
+-------------------------------------------------------------- */
+@mixin bp($point) {
+  @if $point == l {
+    @media (max-width: $bp_lg) { @content; }
+  }
+  @else if $point == m {
+    @media (max-width: $bp_med) { @content; }
+  }
+  @else if $point == s {
+    @media (max-width: $bp_sm)  { @content; }
+  }
+}
+
+
+
+/* PLACEHOLDERS & EXTENDS
+-------------------------------------------------------------- */
+
+
+
+
+/* BASIC STYLES
+-------------------------------------------------------------- */
+*{
+  @include box-sizing('border-box');
+}
+
+body{
+  font: 16px/1.5 $font_main;
+  background-color: $page_bg;  
+  color: $color_main;
+}
+
+a{
+  @include transition;
+  color: $color_accent;
+  text-decoration: none;
+  
+  &:hover{
+    color: $color_main;
+  }
+}
+
+p{
+  
+}
+
+ul,
+ul.menu,
+ul.menu li{
+  list-style: none;
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li a.active,
+li.opened span.nolink{color: $color_main;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+filename = "MDWritingampEditingSolutions-2014-04-22T23-52-38"
+description = ""
+datestamp = "1398235958"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.27"
+sites[0][name] = "MD Writing & Editing Solutions"
+sites[0][url] = "http://md.dev/"
